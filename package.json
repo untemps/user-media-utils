@@ -2,7 +2,6 @@
 	"name": "@untemps/user-media-utils",
 	"version": "1.0.1",
 	"description": "Collection of utility functions to manage user media permissions",
-	"main": "dist/index.js",
 	"repository": "git@github.com:untemps/user-media-utils.git",
 	"keywords": [
 		"utils",
@@ -17,24 +16,43 @@
 	"publishConfig": {
 		"access": "public"
 	},
+	"main": "dist/index.js",
+	"module": "dist/index.es.js",
 	"devDependencies": {
-		"@babel/core": "^7.9.6",
+		"@babel/cli": "^7.10.1",
+		"@babel/core": "^7.10.2",
 		"@babel/plugin-proposal-class-properties": "^7.8.3",
-		"@babel/plugin-transform-runtime": "^7.9.6",
+		"@babel/plugin-transform-runtime": "^7.10.1",
 		"@babel/preset-env": "^7.9.6",
 		"@semantic-release/changelog": "^5.0.1",
 		"@semantic-release/git": "^9.0.0",
 		"@untemps/event-dispatcher": "^1.1.0",
 		"babel-jest": "^26.0.1",
+		"cross-env": "^7.0.2",
 		"husky": "^4.2.5",
 		"jest": "^26.0.1",
 		"parcel-bundler": "^1.12.4",
 		"prettier": "^2.0.5",
+		"rollup": "^2.12.0",
+		"rollup-plugin-babel": "^4.4.0",
+		"rollup-plugin-commonjs": "^10.1.0",
+		"rollup-plugin-filesize": "^9.0.0",
+		"rollup-plugin-node-resolve": "^5.2.0",
+		"rollup-plugin-terser": "^6.1.0",
 		"semantic-release": "^17.0.7"
 	},
 	"jest": {
 		"testPathIgnorePatterns": [
 			".+Mock.js"
+		]
+	},
+	"babel": {
+		"presets": [
+			"@babel/preset-env"
+		],
+		"plugins": [
+			"@babel/plugin-proposal-class-properties",
+			"@babel/plugin-transform-runtime"
 		]
 	},
 	"husky": {
@@ -57,7 +75,10 @@
 	"scripts": {
 		"test": "jest -u --watch",
 		"test:ci": "CI=true jest -u -b",
-		"build": "parcel build src/index.js",
+		"build": "yarn build:cjs && yarn build:es && yarn build:umd",
+		"build:cjs": "cross-env NODE_ENV=production BABEL_ENV=cjs rollup -c",
+		"build:es": "cross-env NODE_ENV=production BABEL_ENV=es rollup -c",
+		"build:umd": "cross-env NODE_ENV=production BABEL_ENV=umd rollup -c",
 		"prettier": "prettier \"*/**/*.js\" --ignore-path ./.prettierignore --write"
 	}
 }
