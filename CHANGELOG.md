@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/untemps/user-media-utils/compare/v1.0.1...v1.0.2) (2020-05-31)
+
+
+### Bug Fixes
+
+* Force package publishing as previous push has fixed the build output ([1627c36](https://github.com/untemps/user-media-utils/commit/1627c367aa2ab5f76286bd2786dcd2a98a5ebd34))
+
 ## [1.0.1](https://github.com/untemps/user-media-utils/compare/v1.0.0...v1.0.1) (2020-05-30)
 
 
