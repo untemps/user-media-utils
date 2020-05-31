@@ -1,5 +1,5 @@
 /**
- * Returns a promise resolved when the media is authorized and the stream retrieved
+ * Returns a promise resolved when the media is authorized and the stream is retrieved
  * @param permissionName            Name of the permission. @see https://w3c.github.io/permissions/#enumdef-permissionname
  * @param mediaStreamConstraints    Constraints object. @see https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamConstraints
  * @returns {Promise}

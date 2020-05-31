@@ -14,6 +14,8 @@ yarn add @untemps/user-media-utils
 
 *getUserMediaStream*:
 
+Returns a promise resolved when the media is authorized and the stream is retrieved
+
 ```javascript
 import { getUserMediaStream } from '@untemps/user-media-utils'
 

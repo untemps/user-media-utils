@@ -1,8 +1,7 @@
 class MediaDevices {
 	__stream = null
 
-	constructor() {
-	}
+	constructor() {}
 
 	async getUserMedia() {
 		return await Promise.resolve(this.__stream)
