@@ -38,3 +38,4 @@ const init = async () => {
 ## Todos
 
 -   Rewrite with TypeScript
+-   Add commitlint to ensure commit logs are valid
