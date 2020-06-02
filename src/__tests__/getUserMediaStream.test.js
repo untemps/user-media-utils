@@ -1,4 +1,4 @@
-import { getUserMediaStream } from '../userMediaUtils'
+import getUserMediaStream from '../getUserMediaStream'
 
 import NavigatorPermissionsMock from './NavigatorPermissionsMock'
 import NavigatorMediaDevicesMock from './NavigatorMediaDevicesMock'

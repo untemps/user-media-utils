@@ -4,7 +4,7 @@
  * @param mediaStreamConstraints    Constraints object. @see https://developer.mozilla.org/en-US/docs/Web/API/MediaStreamConstraints
  * @returns {Promise}
  */
-export const getUserMediaStream = async (permissionName, mediaStreamConstraints) => {
+export default async (permissionName, mediaStreamConstraints) => {
 	return new Promise(async (resolve, reject) => {
 		if (!navigator.permissions) {
 			reject(new Error('PERMISSIONS_NOT_SUPPORTED'))

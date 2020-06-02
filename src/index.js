@@ -1,3 +1,1 @@
-import { getUserMediaStream } from './userMediaUtils'
-
-export { getUserMediaStream }
+export { default as getUserMediaStream } from './getUserMediaStream'

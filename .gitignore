@@ -1,6 +1,8 @@
 # Build
 .cache/
 dist/
+stats.html
+visualizer
 
 # Dependencies
 node_modules/
