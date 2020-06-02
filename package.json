@@ -1,6 +1,6 @@
 {
 	"name": "@untemps/user-media-utils",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Collection of utility functions to manage user media permissions",
 	"repository": "git@github.com:untemps/user-media-utils.git",
 	"keywords": [

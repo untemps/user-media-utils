@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/untemps/user-media-utils/compare/v1.0.2...v1.0.3) (2020-06-02)
+
+
+### Bug Fixes
+
+* Remove babel unused plugins from build and change functions export ([0912896](https://github.com/untemps/user-media-utils/commit/0912896614dd6b3ea6692aa50feb472c9021da9a))
+
 ## [1.0.2](https://github.com/untemps/user-media-utils/compare/v1.0.1...v1.0.2) (2020-05-31)
 
 
