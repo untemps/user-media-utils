@@ -41,11 +41,6 @@
 		"rollup-plugin-visualizer": "^4.0.4",
 		"semantic-release": "^17.0.7"
 	},
-	"jest": {
-		"testPathIgnorePatterns": [
-			".+Mock.js"
-		]
-	},
 	"husky": {
 		"hooks": {
 			"pre-commit": "yarn test:ci && yarn prettier"
