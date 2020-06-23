@@ -15,7 +15,7 @@ export default async (permissionName) => {
 						reject(new DOMException('NOT_ALLOWED_ERR', 'NotAllowedError'))
 						break
 					case 'prompt':
-						const onChange = event => {
+						const onChange = (event) => {
 							permissionStatus.removeEventListener('change', onChange)
 							if (event.target.state === 'denied') {
 								reject(new DOMException('NOT_ALLOWED_ERR', 'NotAllowedError'))
