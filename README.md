@@ -2,8 +2,9 @@
 
 Collection of utility functions to manage user permissions.
 
-![.github/workflows/index.yml](https://github.com/untemps/user-media-utils/workflows/.github/workflows/index.yml/badge.svg?branch=master)
-[![codecov](https://codecov.io/gh/untemps/user-media-utils/branch/master/graph/badge.svg)](https://codecov.io/gh/untemps/user-media-utils)
+![npm](https://img.shields.io/npm/v/@untemps/user-media-utils?style=for-the-badge)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/untemps/user-media-utils/deploy?style=for-the-badge)
+![Codecov](https://img.shields.io/codecov/c/github/untemps/user-media-utils?style=for-the-badge)
 
 ## Installation
 
